@@ -10,10 +10,10 @@ double compute(double a, double b, char op) {
         case '-': return a - b;
         case '*': return a * b;
         case '/':
-            if (b == 0) throw std::runtime_error("Деление на ноль");
+            if (b == 0) throw std::runtime_error("Не делю на ноль");
         return a / b;
         case '^': return std::pow(a, b);
-        default: throw std::runtime_error("Неизвестная операция");
+        default: throw std::runtime_error("Не понимаю");
     }
 }
 
@@ -38,7 +38,7 @@ double parseExpression(std::istringstream &ss) {
             op = c;
             ss.get();
         } else {
-            throw std::runtime_error("Некорректный символ в выражении");
+            throw std::runtime_error("Что за символ?");
         }
     }
 

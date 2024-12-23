@@ -1,7 +1,8 @@
 CMakeFiles/main.dir/calc.cpp.o: \
- /home/stud-09/Documents/218/10.12/calc.cpp /usr/include/stdc-predef.h \
- /home/stud-09/Documents/218/10.12/calc.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/stud-09/Documents/218/VseZadaniya/10.12/calc.cpp \
+ /usr/include/stdc-predef.h \
+ /home/stud-09/Documents/218/VseZadaniya/10.12/calc.h \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

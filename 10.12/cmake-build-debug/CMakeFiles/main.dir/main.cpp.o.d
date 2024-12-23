@@ -1,6 +1,7 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /home/stud-09/Documents/218/10.12/main.cpp /usr/include/stdc-predef.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
+ /home/stud-09/Documents/218/VseZadaniya/10.12/main.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -154,4 +155,4 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/stud-09/Documents/218/10.12/calc.h
+ /home/stud-09/Documents/218/VseZadaniya/10.12/calc.h

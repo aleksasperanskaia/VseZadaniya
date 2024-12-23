@@ -1,4 +1,4 @@
-/home/stud-09/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/stud-09/Documents/218/10.12 -B /home/stud-09/Documents/218/10.12/cmake-build-debug
+/home/stud-09/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/stud-09/Documents/218/VseZadaniya/10.12 -B /home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug
 -- The C compiler identification is GNU 13.2.0
 -- The CXX compiler identification is GNU 13.2.0
 -- Detecting C compiler ABI info
@@ -11,6 +11,6 @@
 -- Check for working CXX compiler: /usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (2.5s)
+-- Configuring done (1.8s)
 -- Generating done (0.0s)
--- Build files have been written to: /home/stud-09/Documents/218/10.12/cmake-build-debug
+-- Build files have been written to: /home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug

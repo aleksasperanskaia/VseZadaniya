@@ -1,4 +1,4 @@
-# Install script for directory: /home/stud-09/Documents/218/10.12
+# Install script for directory: /home/stud-09/Documents/218/VseZadaniya/10.12
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stud-09/Documents/218/10.12/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

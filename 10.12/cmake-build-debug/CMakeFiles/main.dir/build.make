@@ -53,10 +53,10 @@ RM = /home/stud-09/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stud-09/Documents/218/10.12
+CMAKE_SOURCE_DIR = /home/stud-09/Documents/218/VseZadaniya/10.12
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stud-09/Documents/218/10.12/cmake-build-debug
+CMAKE_BINARY_DIR = /home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/main.dir/progress.make
 include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.cpp.o: /home/stud-09/Documents/218/10.12/main.cpp
+CMakeFiles/main.dir/main.cpp.o: /home/stud-09/Documents/218/VseZadaniya/10.12/main.cpp
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stud-09/Documents/218/10.12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.o -MF CMakeFiles/main.dir/main.cpp.o.d -o CMakeFiles/main.dir/main.cpp.o -c /home/stud-09/Documents/218/10.12/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.o -MF CMakeFiles/main.dir/main.cpp.o.d -o CMakeFiles/main.dir/main.cpp.o -c /home/stud-09/Documents/218/VseZadaniya/10.12/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud-09/Documents/218/10.12/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud-09/Documents/218/VseZadaniya/10.12/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud-09/Documents/218/10.12/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud-09/Documents/218/VseZadaniya/10.12/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 CMakeFiles/main.dir/calc.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/calc.cpp.o: /home/stud-09/Documents/218/10.12/calc.cpp
+CMakeFiles/main.dir/calc.cpp.o: /home/stud-09/Documents/218/VseZadaniya/10.12/calc.cpp
 CMakeFiles/main.dir/calc.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stud-09/Documents/218/10.12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/calc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/calc.cpp.o -MF CMakeFiles/main.dir/calc.cpp.o.d -o CMakeFiles/main.dir/calc.cpp.o -c /home/stud-09/Documents/218/10.12/calc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/calc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/calc.cpp.o -MF CMakeFiles/main.dir/calc.cpp.o.d -o CMakeFiles/main.dir/calc.cpp.o -c /home/stud-09/Documents/218/VseZadaniya/10.12/calc.cpp
 
 CMakeFiles/main.dir/calc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/calc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud-09/Documents/218/10.12/calc.cpp > CMakeFiles/main.dir/calc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stud-09/Documents/218/VseZadaniya/10.12/calc.cpp > CMakeFiles/main.dir/calc.cpp.i
 
 CMakeFiles/main.dir/calc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/calc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud-09/Documents/218/10.12/calc.cpp -o CMakeFiles/main.dir/calc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stud-09/Documents/218/VseZadaniya/10.12/calc.cpp -o CMakeFiles/main.dir/calc.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -109,7 +109,7 @@ main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/calc.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stud-09/Documents/218/10.12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/stud-09/Documents/218/10.12/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stud-09/Documents/218/10.12 /home/stud-09/Documents/218/10.12 /home/stud-09/Documents/218/10.12/cmake-build-debug /home/stud-09/Documents/218/10.12/cmake-build-debug /home/stud-09/Documents/218/10.12/cmake-build-debug/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stud-09/Documents/218/VseZadaniya/10.12 /home/stud-09/Documents/218/VseZadaniya/10.12 /home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug /home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug /home/stud-09/Documents/218/VseZadaniya/10.12/cmake-build-debug/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/main.dir/depend
 
