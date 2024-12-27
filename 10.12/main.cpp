@@ -5,22 +5,22 @@
 int main() {
     std::string input;
 
-    std::cout << "Введите математическое выражение (или введите 'stop' для выхода):\n";
+    std::cout << "enter example or stop if you want to stop working:\n";
 
     while (true) {
         std::cout << "> ";
         std::getline(std::cin, input);
 
         if (input == "stop") {
-            std::cout << "Программа завершена.\n";
+            std::cout << "program completed.\n";
             break;
         }
 
         try {
             double result = evaluate(input);
-            std::cout << "Результат: " << result << "\n";
+            std::cout << "result: " << result << "\n";
         } catch (const std::exception& e) {
-            std::cerr << "Ошибка: " << e.what() << "\n";
+            std::cerr << "error: " << e.what() << "\n";
         }
     }
 
@@ -29,9 +29,9 @@ int main() {
     try {
         std::string expression = "3.5*2";
         double result = evaluate(expression);
-        std::cout << "Результат выражения \"" << expression << "\" = " << result << std::endl;
+        std::cout << "result of expression \"" << expression << "\" = " << result << std::endl;
     } catch (const std::exception& e) {
-        std::cerr << "Ошибка: " << e.what() << std::endl;
+        std::cerr << "error: " << e.what() << std::endl;
     }
 
     return 0;
