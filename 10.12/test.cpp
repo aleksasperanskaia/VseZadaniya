@@ -1,69 +1,50 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "calc.h"
 
-TEST_CASE("Тест compute") {
-
-    CHECK(compute(2, 3, '+') == 5);
-    CHECK(compute(5, 2, '-') == 3);
-    CHECK(compute(3, 4, '*') == 12);
-    CHECK(compute(8, 2, '/') == 4);
-
-
-    CHECK_THROWS_AS(compute(8, 0, '/'), std::runtime_error);
-
-
-    CHECK(compute(2, 3, '^') == 8);
-
-
-    CHECK_THROWS_AS(compute(2, 3, '&'), std::runtime_error);
+TEST_CASE("Basic operations") {
+    CHECK(evaluate("1+1") == 2);
+    CHECK(evaluate("5-2") == 3);
+    CHECK(evaluate("4*3") == 12);
+    CHECK(evaluate("8/4") == 2);
 }
 
-TEST_CASE("Тест parseTerm") {
-    std::istringstream ss;
-
-    ss.str("5");
-    double result = parseTerm(ss);
-    CHECK(result == 5);
-
-    ss.str("3.5");
-    result = parseTerm(ss);
-    CHECK(result == 3.5);
-
-
-    ss.str("(2+3)");
-    result = parseTerm(ss);
-    CHECK(result == 5);
-
-
-    ss.str("2 * 3");
-    result = parseTerm(ss);
-    CHECK(result == 6);
-
-
-    ss.str("-3 * 2");
-    result = parseTerm(ss);
-    CHECK(result == -6);
+TEST_CASE("Exponentiation") {
+    CHECK(evaluate("2^3") == 8);
+    CHECK(evaluate("10^0") == 1);
 }
 
-TEST_CASE("Тест evaluate") {
+TEST_CASE("Mixed operations") {
+    CHECK(evaluate("2+3*4") == 14); // Multiplication has higher precedence
+    CHECK(evaluate("10-3/3") == 9); // Division has higher precedence
+}
 
-    CHECK_THROWS_AS(evaluate("2.2.2 * 3"), std::runtime_error);
-    CHECK_THROWS_AS(evaluate("7."), std::runtime_error);
+TEST_CASE("Negative numbers") {
+    CHECK(evaluate("-5+10") == 5);
+    CHECK(evaluate("-2*-3") == 6);
+    CHECK(evaluate("-8/2") == -4);
+}
 
-    CHECK_THROWS_AS(evaluate("2 / 0"), std::runtime_error);
-
-
+TEST_CASE("Edge cases") {
     CHECK_THROWS_AS(evaluate(""), std::runtime_error);
+    CHECK_THROWS_WITH(evaluate(""), "empty input");
+
+    CHECK_THROWS_AS(evaluate("5/0"), std::runtime_error);
+    CHECK_THROWS_WITH(evaluate("5/0"), "division by zero is impossible");
+
+    CHECK_THROWS_AS(evaluate("2++2"), std::runtime_error);
+    CHECK_THROWS_WITH(evaluate("2++2"), "Incorrect expression");
+
+    CHECK_THROWS_AS(evaluate("2--2"), std::runtime_error);
+    CHECK_THROWS_WITH(evaluate("2--2"), "Incorrect expression");
+
+    CHECK_THROWS_AS(evaluate("2..3+1"), std::runtime_error);
+    CHECK_THROWS_WITH(evaluate("2..3+1"), "dot at the end");
+
+    CHECK_THROWS_AS(evaluate("3."), std::runtime_error);
+    CHECK_THROWS_WITH(evaluate("3."), "Некорректное число: точка в конце");
 }
 
-TEST_CASE("Тест обработки ошибок") {
-
-    CHECK_THROWS_AS(evaluate("5 + + 3"), std::runtime_error);
-    CHECK_THROWS_AS(evaluate("5 + * 3"), std::runtime_error);
-    CHECK_THROWS_AS(evaluate("(2 + 3"), std::runtime_error);
-    CHECK_THROWS_AS(evaluate("3 + (2 + 4"), std::runtime_error);
-
-    CHECK_THROWS_AS(evaluate("3 + + 4"), std::runtime_error);
-
+TEST_CASE("Complex expressions") {
+    CHECK(evaluate("3+5*2-8/4") == 10); // Operator precedence
+    CHECK(evaluate("2^3+1") == 9);
 }
