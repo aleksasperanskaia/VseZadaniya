@@ -25,13 +25,6 @@ int main() {
     }
 
     return 0;
-
-    try {
-        std::string expression = "3.5*2";
-        double result = evaluate(expression);
-        std::cout << "result of expression \"" << expression << "\" = " << result << std::endl;
-    } catch (const std::exception& e) {
-        std::cerr << "error: " << e.what() << std::endl;
     }
 
     return 0;
